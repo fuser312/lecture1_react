@@ -1,0 +1,14 @@
+.square-button{
+    display: flex;
+    justify-content: center;
+    width: 64px;
+    height: 48px;
+    background-color: orange;
+    outline: none;
+
+}
+
+.button-text{
+    font-size: 32px;
+    color: chocolate;
+}
