@@ -24,7 +24,14 @@ class Grid extends React.Component {
             isNext : !this.state.isNext,
             status : !this.state.isNext ? "Player X turn" : "Player O turn",
         })
+        this.checkForWin(1);
     }
+
+    checkForWin= (num) => {
+        console.log(this.state.squares[0]);
+        console.log(this.state.squares);
+
+}
 
     gridRow(offset){
         return(
