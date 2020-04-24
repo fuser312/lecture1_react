@@ -1,23 +1,13 @@
 import React from  "react";
 import "./style.css"
-class Square extends React.Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-            value : null,
-        }
-    }
-    render() {
-        return(
-            <button className="square-button" onClick={() =>
-            this.props.clicked()
-            }>
-                <div className="button-text">
-                    {this.props.value}
-                </div>
-            </button>
-        );
-    }
+export default function Square(props) {
+    return (
+        <button className="square-button" onClick={props.onClick}>
+            <div className="button-text">
+            {props.value}
+            </div>
+        </button>
+    )
 }
 
-export default Square
+// export default Square
